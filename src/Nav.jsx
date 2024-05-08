@@ -1,18 +1,23 @@
-import { Link, NavLink, Outlet } from "react-router-dom"
+import { Fragment } from "react"
+import { NavLink, Outlet } from "react-router-dom"
 
 
 function Nav() {
-  const pages = ['Home', 'Projects', 'Skills', 'Contact', ]
+  const pages = ['Home', 'About', 'Projects', 'Skills', 'Contact',]
   return (
-    <NavLink>
+    <Fragment>
+      <div className="">
         {pages.map((page) => (
-            <Link key={page} to={`/${page}`}>
-                {page}
-            </Link>
+          <NavLink 
+          className={({ isActive }) => { return isActive ? 'text-blue-600' : '' }} 
+          key={page} 
+          to={`/${page}`}>
+            {page}
+          </NavLink>
         ))}
-        <Outlet />
-    </NavLink>
-
+      </div>
+      <Outlet />
+    </Fragment>
   )
 }
 

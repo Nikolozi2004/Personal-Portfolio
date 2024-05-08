@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export const Projects = () => {
-    const projects = [1, 2, 3, 4, 5]
+    const projects = ['project1', 'project2', 'project3', 'project4', 'project5']
 
     
     return (
@@ -11,7 +11,6 @@ export const Projects = () => {
                     {project}
                 </Link>
             ))}
-            <Outlet />
         </div>
     )
 }
