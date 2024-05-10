@@ -1,18 +1,18 @@
 import React from 'react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavList } from './NavList';
+import { useState } from 'react';
 import {
     Navbar,
     Collapse,
     Typography,
     IconButton,
 } from "@material-tailwind/react";
+import { DarkMode } from './DarkMode';
 
 
 export const NavBar = () => {
     const [openNav, setOpenNav] = React.useState(false);
-    
-
     const handleWindowResize = () =>
         window.innerWidth >= 960 && setOpenNav(false);
 
@@ -36,6 +36,7 @@ export const NavBar = () => {
                 >
                     Nikoloz Meskhi
                 </Typography>
+                <DarkMode />
                 <div className="hidden lg:block">
                     <NavList open={openNav}/>
                 </div>
