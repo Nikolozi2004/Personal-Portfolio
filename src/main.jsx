@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Nav from './Nav.jsx'
+import App from './App.jsx'
 import { Home } from './pages/Home.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -10,15 +10,22 @@ import { Skills } from './pages/Skills.jsx'
 import { Contact } from './pages/Contact.jsx'
 import { Project1 } from './components/Project1.jsx'
 import { About } from './pages/About.jsx'
+import { AnimatePresence } from 'framer-motion'
+
+
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Nav />,
+    element: <App />,
     errorElement: <PageNotFound />,
     children: [
       {
-        path: '/Home',
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/home',
         element: <Home />,
       },
       {
@@ -46,8 +53,11 @@ const router = createBrowserRouter([
 
 ]);
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AnimatePresence mode='wait'>
+      <RouterProvider router={router} />
+    </AnimatePresence>
   </React.StrictMode>,
 )
