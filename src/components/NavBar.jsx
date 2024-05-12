@@ -14,7 +14,7 @@ import { DarkMode } from './DarkMode';
 export const NavBar = () => {
     const [openNav, setOpenNav] = React.useState(false);
     const handleWindowResize = () =>
-        window.innerWidth >= 960 && setOpenNav(false);
+        window.innerWidth >= 960 && setOzpenNav(false);
 
     React.useEffect(() => {
         window.addEventListener("resize", handleWindowResize);
@@ -27,7 +27,7 @@ export const NavBar = () => {
 
     return (
         <Navbar className="mx-auto max-w-screen-xl px-6 py-3">
-            <div className="flex items-center justify-between text-blue-gray-900">
+            <div className="dark:bg-black flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"
                     href="#"
