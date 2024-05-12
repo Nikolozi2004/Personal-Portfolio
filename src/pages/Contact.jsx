@@ -1,10 +1,15 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { Input, Textarea, Button } from '@material-tailwind/react'
+import React from 'react';
+import { Alert, Breadcrumbs } from "@material-tailwind/react";
+import { motion } from 'framer-motion';
+import { Input, Textarea, Button } from '@material-tailwind/react';
 import { useForm, useWatch } from "react-hook-form";
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 export const Contact = () => {
 
+  const [open, setOpen] = React.useState(true);
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [Message, setMessage] = React.useState("");
   const {
     register,
     handleSubmit,
@@ -15,8 +20,6 @@ export const Contact = () => {
   } = useForm({
     mode: "onTouched",
   });
-  const [isSuccess, setIsSuccess] = React.useState(false);
-  const [Message, setMessage] = React.useState("");
 
   const userName = useWatch({
     control,
@@ -61,14 +64,27 @@ export const Contact = () => {
 
   return (
     <motion.div
-      className='w-full h-full flex items-center justify-center'
+      className='w-full h-full flex items-center justify-center relative'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}>
+      <Breadcrumbs className='absolute top-0 w-72'>
+        <Link to='/home' className="opacity-60">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+          </svg>
+        </Link>
+        <p>Contact</p>
+      </Breadcrumbs>
       <div className='bg-blue-gray-900 dark:bg-white w-10/12 h-full flex items-center justify-center flex-col'>
-
-        <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h-10/12' action="https://api.web3forms.com/submit" method="POST">
+        <h1 className='text-white font-medium text-2xl'>Get In Touch</h1>
+        <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h1' action="https://api.web3forms.com/submit" method="POST">
 
           <input {...register("access_key")} type="hidden" name="access_key" value="8b9bb628-dd00-4250-8eb2-e8a8be43283d" />
           <input
@@ -116,10 +132,6 @@ export const Contact = () => {
               <small>{errors.email.message}</small>
             </div>
           )}
-          <Input size='lg' type="text" label='Subject' color='white' name='subject' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
-            <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
-          </svg>
-          } />
           <Textarea color="White" label="Message" name='message' size='lg'
             className={`border-1 text-white rounded-md outline-none  h-36  focus:ring-4  ${errors.message
               ? "border-red-600 focus:border-red-600"
@@ -158,11 +170,21 @@ export const Contact = () => {
 
           </Button>
         </form>
+
       </div>
       <div className='w-1/2 h-full flex justify-center items-center'>
         hello
       </div>
-
+      {isSubmitSuccessful && isSuccess && (
+        <Alert color='green' open={open} onClose={() => setOpen(false)} className='absolute bottom-0'>
+          Your message has been sent.
+        </Alert>
+      )}
+      {isSubmitSuccessful && !isSuccess && (
+        <Alert color='red' open={open} onClose={() => setOpen(false)} className='absolute bottom-0'>
+          There was an error sending your message. Please try again later.
+        </Alert>
+      )}
     </motion.div>
 
   )

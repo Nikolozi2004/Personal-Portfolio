@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavList } from './NavList';
-import { useState } from 'react';
+
 import {
     Navbar,
     Collapse,
@@ -14,7 +14,7 @@ import { DarkMode } from './DarkMode';
 export const NavBar = () => {
     const [openNav, setOpenNav] = React.useState(false);
     const handleWindowResize = () =>
-        window.innerWidth >= 960 && setOzpenNav(false);
+        window.innerWidth >= 960 && setOpenNav(false);
 
     React.useEffect(() => {
         window.addEventListener("resize", handleWindowResize);
