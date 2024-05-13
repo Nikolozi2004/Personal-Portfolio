@@ -24,5 +24,6 @@ export const PageNotFound = () => {
         </div>
       </main>
     </motion.div>
+    
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Alert, Breadcrumbs } from "@material-tailwind/react";
 import { motion } from 'framer-motion';
 import { Input, Textarea, Button } from '@material-tailwind/react';
@@ -9,7 +9,7 @@ export const Contact = () => {
 
   const [open, setOpen] = React.useState(true);
   const [isSuccess, setIsSuccess] = React.useState(false);
-  const [Message, setMessage] = React.useState("");
+  const [, setMessage] = React.useState("");
   const {
     register,
     handleSubmit,
@@ -82,9 +82,9 @@ export const Contact = () => {
         </Link>
         <p>Contact</p>
       </Breadcrumbs>
-      <div className='bg-blue-gray-900 dark:bg-white w-10/12 h-full flex items-center justify-center flex-col'>
+      <div className='bg-gray-900 dark:bg-white w-10/12 h-full flex items-center justify-center flex-col'>
         <h1 className='text-white font-medium text-2xl'>Get In Touch</h1>
-        <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h1' action="https://api.web3forms.com/submit" method="POST">
+        <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h-96' action="https://api.web3forms.com/submit" method="POST">
 
           <input {...register("access_key")} type="hidden" name="access_key" value="8b9bb628-dd00-4250-8eb2-e8a8be43283d" />
           <input
@@ -98,7 +98,7 @@ export const Contact = () => {
           <Input {...register("name")} size='lg' color='white' type="text" label='Name' name='name' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
             <path fillRule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clipRule="evenodd" />
           </svg>}
-            className={`w-full px-4 py-3 border-1  rounded-md focus:ring-4 ${errors.name
+            className={`w-full px-4 py-3 border-1 mb-3 rounded-md focus:ring-4 ${errors.name
               ? "border-red-600 focus:border-red-600 ring-red-100"
               : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
               }`}
@@ -107,9 +107,7 @@ export const Contact = () => {
               maxLength: 35,
             })} />
           {errors.name && (
-            <div className="mt-1 text-red-600">
-              <small>{errors.name.message}</small>
-            </div>
+              <small className='text-red-600'>{errors.name.message}</small>
           )}
           <Input {...register("email")} color='white' size='lg' type="Email" label='Email' name='email' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
             <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
@@ -128,21 +126,19 @@ export const Contact = () => {
               },
             })} />
           {errors.email && (
-            <div className="mt-1 text-red-600">
-              <small>{errors.email.message}</small>
-            </div>
+            <small className='text-red-600'>{errors.email.message}</small>
           )}
-          <Textarea color="White" label="Message" name='message' size='lg'
+          <Textarea color="purple" label="Message" name='message' size='lg'
             className={`border-1 text-white rounded-md outline-none  h-36  focus:ring-4  ${errors.message
               ? "border-red-600 focus:border-red-600"
               : "border-gray-300 focus:border-indigo-600 "
               }`}
             {...register("message", { required: "Enter your Message" })} />
           {errors.message && (
-            <div className="mt-1 text-red-600">
+            <Fragment>
               {" "}
-              <small>{errors.message.message}</small>
-            </div>
+              <small className='text-red-600'>{errors.message.message}</small>
+            </Fragment>
           )}
           <Button type="submit" variant='gradient' className="w-full py-4 text-white transition-colors bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-indigo-200 px-7 umami--click--contact-submit">
 
