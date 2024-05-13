@@ -26,7 +26,7 @@ export const NavBar = () => {
 
 
     return (
-        <Navbar className="mx-auto max-w-screen-xl px-6 py-3">
+        <Navbar className="mx-auto max-w-screen-2xl px-6 py-2 bg-gray-700 ">
             <div className="dark:bg-black flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"
