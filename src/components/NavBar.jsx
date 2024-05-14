@@ -1,14 +1,13 @@
 import React from 'react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavList } from './NavList';
-
 import {
     Navbar,
     Collapse,
     Typography,
     IconButton,
 } from "@material-tailwind/react";
-import { DarkMode } from './DarkMode';
+
 
 
 export const NavBar = () => {
@@ -30,13 +29,12 @@ export const NavBar = () => {
             <div className="dark:bg-black flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"
-                    href="#"
                     variant="h6"
                     className="mr-4 cursor-pointer py-1.5"
+                    color='white'
                 >
                     Nikoloz Meskhi
                 </Typography>
-                <DarkMode />
                 <div className="hidden lg:block">
                     <NavList open={openNav}/>
                 </div>

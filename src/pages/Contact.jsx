@@ -5,6 +5,7 @@ import { Input, Textarea, Button } from '@material-tailwind/react';
 import { useForm, useWatch } from "react-hook-form";
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 export const Contact = () => {
 
   const [open, setOpen] = React.useState(true);
@@ -69,19 +70,7 @@ export const Contact = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}>
-      <Breadcrumbs className='absolute top-0 w-72'>
-        <Link to='/home' className="opacity-60">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-          </svg>
-        </Link>
-        <p>Contact</p>
-      </Breadcrumbs>
+
       <div className='bg-gray-900 dark:bg-white w-10/12 h-full flex items-center justify-center flex-col'>
         <h1 className='text-white font-medium text-2xl'>Get In Touch</h1>
         <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h-96' action="https://api.web3forms.com/submit" method="POST">
@@ -107,7 +96,7 @@ export const Contact = () => {
               maxLength: 35,
             })} />
           {errors.name && (
-              <small className='text-red-600'>{errors.name.message}</small>
+            <small className='text-red-600'>{errors.name.message}</small>
           )}
           <Input {...register("email")} color='white' size='lg' type="Email" label='Email' name='email' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
             <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
@@ -169,7 +158,7 @@ export const Contact = () => {
 
       </div>
       <div className='w-1/2 h-full flex justify-center items-center'>
-        hello
+        
       </div>
       {isSubmitSuccessful && isSuccess && (
         <Alert color='green' open={open} onClose={() => setOpen(false)} className='absolute bottom-0'>

@@ -1,17 +1,27 @@
 import React from 'react'
-
 import { motion } from 'framer-motion'
-
+import { Link } from 'react-router-dom'
 export const Home = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }} // Adjust animation duration as needed
+      transition={{ duration: 0.5 }}
+      className='relative w-full h-full flex flex-col items-center justify-center'
+      
     >
-      <h1>Welcome to the Home Page!</h1>
-      {/* Your Home page content */}
+      <div className="flex flex-col items-center justify-center bg-gray-900 text-white">
+        <h1 className="text-4xl font-bold text-center mb-4">Full-Stack Developer</h1>
+        <p className="text-xl text-gray-300 text-center max-w-md">
+          As a full-stack developer with [X years] of experience, I've built [mention a key achievement or project]. I'm passionate about crafting user-friendly interfaces and robust backends to deliver exceptional web experiences. Let's collaborate on your next project!
+        </p>
+      </div>
+      <Link to="/about">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-6 h-6 absolute bottom-10 right-10 cursor-pointer hover:fill-blue-900">
+        <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+      </svg>
+      </Link>
     </motion.div>
   )
 }
