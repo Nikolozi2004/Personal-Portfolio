@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import ProjectSection from '../components/ProjectSection';
+
 export const Projects = () => {
-    const projects = ['project1', 'project2', 'project3', 'project4', 'project5']
 
 
     return (
@@ -10,13 +10,11 @@ export const Projects = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}>
-            <div>
-                {projects.map((project) => (
-                    <Link key={project} to={`/projects/${project}`}>
-                        {project}
-                    </Link>
-                ))}
+            transition={{ duration: 1 }}
+            className='w-full h-full relative'>
+            
+            <div className="container mx-auto py-8">
+                <ProjectSection />
             </div>
         </motion.div>
     )

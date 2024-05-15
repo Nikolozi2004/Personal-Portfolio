@@ -8,7 +8,6 @@ import { PageNotFound } from './components/PageNotFound.jsx'
 import { Projects } from './pages/Projects.jsx'
 import { Skills } from './pages/Skills.jsx'
 import { Contact } from './pages/Contact.jsx'
-import { Project1 } from './components/Project1.jsx'
 import { About } from './pages/About.jsx'
 import { AnimatePresence } from 'framer-motion'
 
@@ -44,10 +43,10 @@ const router = createBrowserRouter([
         path: '/projects',
         element: <Projects />,
       },
-      {
-        path: '/projects/project1',
-        element: <Project1 />
-      },
+      // {
+      //   path: '/projects/project1',
+      //   element: <Project1 />
+      // },
     ],
   },
 

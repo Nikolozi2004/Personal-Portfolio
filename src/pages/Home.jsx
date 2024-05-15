@@ -12,9 +12,9 @@ export const Home = () => {
       
     >
       <div className="flex flex-col items-center justify-center bg-gray-900 text-white">
-        <h1 className="text-4xl font-bold text-center mb-4">Full-Stack Developer</h1>
+        <h1 className="text-4xl font-bold text-center mb-4">Yooooo YOooooooo yoo</h1>
         <p className="text-xl text-gray-300 text-center max-w-md">
-          As a full-stack developer with [X years] of experience, I've built [mention a key achievement or project]. I'm passionate about crafting user-friendly interfaces and robust backends to deliver exceptional web experiences. Let's collaborate on your next project!
+        Yooooo YOooooooo yoo Yooooo YOooooooo yoo Yooooo YOooooooo yoo Yooooo YOooooooo yoo
         </p>
       </div>
       <Link to="/about">

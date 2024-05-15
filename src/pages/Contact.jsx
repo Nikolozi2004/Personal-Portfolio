@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import { Input, Textarea, Button } from '@material-tailwind/react';
 import { useForm, useWatch } from "react-hook-form";
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 export const Contact = () => {
 
   const [open, setOpen] = React.useState(true);
@@ -71,10 +69,10 @@ export const Contact = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}>
 
-      <div className='bg-gray-900 dark:bg-white w-10/12 h-full flex items-center justify-center flex-col'>
+      <div className='w-10/12 h-full flex items-center justify-center flex-col relative'>
+        <div className="absolute inset-0 backdrop-blur-sm rounded-md"></div>
         <h1 className='text-white font-medium text-2xl'>Get In Touch</h1>
         <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h-96' action="https://api.web3forms.com/submit" method="POST">
-
           <input {...register("access_key")} type="hidden" name="access_key" value="8b9bb628-dd00-4250-8eb2-e8a8be43283d" />
           <input
             type="hidden"
@@ -158,7 +156,7 @@ export const Contact = () => {
 
       </div>
       <div className='w-1/2 h-full flex justify-center items-center'>
-        
+        YOOOOOOOOOOOOOOOOOOOO
       </div>
       {isSubmitSuccessful && isSuccess && (
         <Alert color='green' open={open} onClose={() => setOpen(false)} className='absolute bottom-0'>

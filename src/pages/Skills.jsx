@@ -1,11 +1,10 @@
 import { Progress } from '@material-tailwind/react';
 import { motion } from 'framer-motion'
-import { 
+import {
   JavascriptPlain,
   TypescriptPlain,
   ReactOriginal,
-  JavascriptOriginal,
-  TailwindcssPlainWordmark,
+  TailwindcssOriginal,
   Html5Plain,
   Css3Plain,
   CsharpPlain,
@@ -13,7 +12,11 @@ import {
   ExpressOriginal,
   NodejsPlain,
   GitPlain,
- } from 'devicons-react';
+  DockerPlain,
+  VisualstudioPlain,
+  EslintPlain,
+  VscodePlain
+} from 'devicons-react';
 
 export const Skills = () => {
 
@@ -49,14 +52,14 @@ export const Skills = () => {
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
-          <ReactOriginal size="80" color='darkgreen' fill='darkgreen' radius='3px' className='w-20 h-20 [&_*]:fill-green-700'/>
+          <ReactOriginal size="80" color='darkgreen' fill='darkgreen' radius='3px' className='w-20 h-20 [&_*]:fill-green-700' />
           <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
-          <TailwindcssPlainWordmark size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
+          <TailwindcssOriginal size="80" color='darkgreen' fill='darkgreen' radius='3px' className='w-20 h-20 [&_*]:fill-green-700' />
           <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
@@ -121,32 +124,32 @@ export const Skills = () => {
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
-          <JavascriptOriginal size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
+          <DockerPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
           <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
-          <JavascriptOriginal size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
+          <VisualstudioPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
           <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
-          <JavascriptOriginal size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
+          <VscodePlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
           <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
-          <JavascriptOriginal size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
+          <EslintPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
           <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
         </motion.div>
       </div>
-         
+
     </motion.div>
 
   );
