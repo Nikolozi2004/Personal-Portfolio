@@ -24,7 +24,7 @@ export const Skills = () => {
   return (
 
     <motion.div
-      className='w-full relative flex flex-col lg:flex-row justify-evenly pt-6 h-full'
+      className='w-full relative flex flex-col lg:flex-row justify-evenly pt-6 max-w-screen-2xl'
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -39,42 +39,42 @@ export const Skills = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <TypescriptPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <JavascriptPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <ReactOriginal size="80" color='darkgreen' fill='darkgreen' radius='3px' className='w-20 h-20 [&_*]:fill-green-700' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <TailwindcssOriginal size="80" color='darkgreen' fill='darkgreen' radius='3px' className='w-20 h-20 [&_*]:fill-green-700' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <Css3Plain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <Html5Plain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
       </div>
 
@@ -87,28 +87,28 @@ export const Skills = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <CsharpPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <NodejsPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <MongodbPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <ExpressOriginal size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
       </div>
       <div className='h-full w-full lg:w-1/3 flex flex-col items-center mb-8 lg:mb-0'>
@@ -118,35 +118,35 @@ export const Skills = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <GitPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <DockerPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <VisualstudioPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <VscodePlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
         <motion.div
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 bg-gray-100 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
           <EslintPlain size="80" color='darkgreen' radius='3px' className='w-20 h-20' />
-          <Progress color='pink' value={85} size="lg" label="Proficient" className='mx-1' />
+          <Progress color='pink' value={85} size="md" label="Proficient" className='mx-1' />
         </motion.div>
       </div>
 

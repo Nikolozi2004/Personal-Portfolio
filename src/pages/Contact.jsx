@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Alert, Breadcrumbs } from "@material-tailwind/react";
+import { Alert } from "@material-tailwind/react";
 import { motion } from 'framer-motion';
 import { Input, Textarea, Button } from '@material-tailwind/react';
 import { useForm, useWatch } from "react-hook-form";
@@ -63,14 +63,13 @@ export const Contact = () => {
 
   return (
     <motion.div
-      className='w-full h-full flex items-center justify-center relative'
+      className='w-full h-full flex items-center justify-center relative backdrop-saturate-50'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}>
 
       <div className='w-10/12 h-full flex items-center justify-center flex-col relative'>
-        <div className="absolute inset-0 backdrop-blur-sm rounded-md"></div>
         <h1 className='text-white font-medium text-2xl'>Get In Touch</h1>
         <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h-96' action="https://api.web3forms.com/submit" method="POST">
           <input {...register("access_key")} type="hidden" name="access_key" value="8b9bb628-dd00-4250-8eb2-e8a8be43283d" />
