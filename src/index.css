@@ -62,3 +62,7 @@
 /* .NavLink {
     font-family: robotomedium;
 } */
+
+.contchild:first-child {
+    fill: #ffffff !important;
+}

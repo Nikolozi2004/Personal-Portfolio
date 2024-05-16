@@ -25,8 +25,7 @@ export const NavBar = () => {
 
 
     return (
-        <Navbar className="mx-auto max-w-screen-2xl z-50 px-6 py-2 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]
-        ">
+        <Navbar className="mx-auto max-w-screen-2xl z-50 px-6 py-2 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
             <div className="flex items-center justify-between">
                 <Typography
                     as="a"
