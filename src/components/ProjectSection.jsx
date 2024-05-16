@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
     return (
@@ -10,6 +10,7 @@ const ProjectSection = () => {
                     <div className="h-2/4 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] relative">
                         <h2 className="text-lg font-semibold text-white"></h2>
                         <p className="text-gray-600 mt-2"></p>
+                        <Link to="/ProjectProp">See full description</Link>
                         <div className="flex px-4 justify-between absolute bottom-3 w-full">
                             <a href='#' target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Hosted website</a>
                             <a href='#' target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Source Code</a>

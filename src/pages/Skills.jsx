@@ -14,8 +14,8 @@ import {
   GitOriginal,
   DockerOriginal,
   VisualstudioOriginal,
-  EslintOriginal,
-  VscodeOriginal
+  VscodeOriginal,
+  VitejsOriginal
 } from 'devicons-react';
 
 export const Skills = () => {
@@ -57,7 +57,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                JavaScript Intermediate
+                (JavaScript) Intermediate
               </Typography>
               <Typography color="white" variant="h6">
                 60%
@@ -283,19 +283,20 @@ export const Skills = () => {
           className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 lg-max:w-11/12'
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}>
-          <EslintOriginal size="80" radius='3px' className='w-20 h-20' />
+          <VitejsOriginal size="80" radius='3px' className='w-20 h-20' />
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Typescript) Learning
+                (Vite) Proficient
               </Typography>
               <Typography color="white" variant="h6">
-                10%
+                70%
               </Typography>
             </div>
-            <Progress color='pink' value={10} size="md" />
+            <Progress color='yellow' value={70} size="md" />
           </div>
         </motion.div>
+        
       </div>
 
     </motion.div>
