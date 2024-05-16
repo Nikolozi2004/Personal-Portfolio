@@ -25,8 +25,9 @@ export const NavBar = () => {
 
 
     return (
-        <Navbar className="mx-auto max-w-screen-2xl px-6 py-2 bg-gray-700 ">
-            <div className="dark:bg-black flex items-center justify-between text-blue-gray-900">
+        <Navbar className="mx-auto max-w-screen-2xl z-50 px-6 py-2 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]
+        ">
+            <div className="flex items-center justify-between">
                 <Typography
                     as="a"
                     variant="h6"
@@ -36,9 +37,10 @@ export const NavBar = () => {
                     Nikoloz Meskhi
                 </Typography>
                 <div className="hidden lg:block">
-                    <NavList open={openNav}/>
+                    <NavList open={openNav} />
                 </div>
                 <IconButton
+                    color='white'
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
                     ripple={false}

@@ -11,7 +11,7 @@ export const About = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className='w-full h-full relative'>
-        
+
     </motion.div>
   )
 }

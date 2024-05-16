@@ -8,13 +8,41 @@
     min-height: 100vh;
     width: 100%;
     min-width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
     --tw-bg-opacity: 1;
     background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
+
+/* For WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 3.5px;
+    /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    /* Color of the thumb */
+    
+    /* Rounded corners */
+}
+
+/* For Firefox */
+/* Note: Firefox does not support styling the scrollbar directly. 
+     The below styles will only work if `layout.css.scrollbar-color.enabled` 
+     preference is set to true in `about:config` */
+/* You may need to add the following rule into your CSS to make Firefox
+     accept the scrollbar style */
+/* html { scrollbar-color: #ddd #fff; } */
+
 
 @font-face {
     font-family: roboto;

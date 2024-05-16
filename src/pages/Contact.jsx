@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Input, Textarea, Button } from '@material-tailwind/react';
 import { useForm, useWatch } from "react-hook-form";
 import { useEffect } from 'react';
+import { GithubOriginal, LinkedinOriginal } from 'devicons-react';
 export const Contact = () => {
 
   const [open, setOpen] = React.useState(true);
@@ -64,14 +65,18 @@ export const Contact = () => {
   return (
     <motion.div
       className='w-full h-full flex items-center justify-center relative backdrop-saturate-50'
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ x: "45%" }}
+      animate={{ x: "0%" }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}>
+      transition={{ duration: 0.5, ease: 'easeOut' }}>
 
       <div className='w-10/12 h-full flex items-center justify-center flex-col relative'>
-        <h1 className='text-white font-medium text-2xl'>Get In Touch</h1>
-        <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-md flex justify-evenly items-center flex-col h-96' action="https://api.web3forms.com/submit" method="POST">
+        <h1 className='text-white font-medium text-2xl py-4'>Get In Touch</h1>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className='w-full max-w-lg flex justify-evenly items-center flex-col h-96 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] rounded-md py-4 px-4'
+          action="https://api.web3forms.com/submit"
+          method="POST">
           <input {...register("access_key")} type="hidden" name="access_key" value="8b9bb628-dd00-4250-8eb2-e8a8be43283d" />
           <input
             type="hidden"
@@ -81,7 +86,7 @@ export const Contact = () => {
             value="Mission Control"
             {...register("from_name")} />
 
-          <Input {...register("name")} size='lg' color='white' type="text" label='Name' name='name' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
+          <Input {...register("name")} size='lg' color='purple' type="text" label='Name' name='name' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
             <path fillRule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clipRule="evenodd" />
           </svg>}
             className={`w-full px-4 py-3 border-1 mb-3 rounded-md focus:ring-4 ${errors.name
@@ -95,7 +100,7 @@ export const Contact = () => {
           {errors.name && (
             <small className='text-red-600'>{errors.name.message}</small>
           )}
-          <Input {...register("email")} color='white' size='lg' type="Email" label='Email' name='email' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
+          <Input {...register("email")} color='purple' size='lg' type="Email" label='Email' name='email' icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 text-white h-6">
             <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
             <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
           </svg>
@@ -126,7 +131,7 @@ export const Contact = () => {
               <small className='text-red-600'>{errors.message.message}</small>
             </Fragment>
           )}
-          <Button type="submit" variant='gradient' className="w-full py-4 text-white transition-colors bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-indigo-200 px-7 umami--click--contact-submit">
+          <Button variant="gradient" size='md' type="submit" className="w-full py-4 text-white transition-colors bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-indigo-200 px-7 umami--click--contact-submit">
 
             {isSubmitting ? (
               <svg
@@ -154,8 +159,15 @@ export const Contact = () => {
         </form>
 
       </div>
-      <div className='w-1/2 h-full flex justify-center items-center'>
-        YOOOOOOOOOOOOOOOOOOOO
+      <div className='w-1/2 h-full flex justify-center items-center relative'>
+        <div className='absolute right-0 w-auto h-auto'>
+          <a href="https://github.com/Nikolozi2004" target='_blank'>
+            <GithubOriginal size='40' className='my-2 bg-white' />
+          </a>
+          <a href="https://www.linkedin.com/in/nikoloz-meskhi-a69bb2181/" target='_blank'>
+            <LinkedinOriginal size='40' className='my-2 bg-white' />
+          </a>
+        </div>
       </div>
       {isSubmitSuccessful && isSuccess && (
         <Alert color='green' open={open} onClose={() => setOpen(false)} className='absolute bottom-0'>
