@@ -1,6 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
+import { Typography } from '@material-tailwind/react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 export const Home = () => {
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -10,11 +13,14 @@ export const Home = () => {
       className='relative w-full h-full flex flex-col items-center justify-center'
 
     >
-      <div className="flex flex-col items-center justify-center bg-gray-900 text-white">
-        <h1 className="text-4xl font-bold text-center mb-4">Hello! Welcome to My Web Space</h1>
-        <p className="text-xl text-gray-300 text-center max-w-md">
-          Glad you stopped by! I'm Nikoloz Meskhi, a full-stack web developer. Explore my projects!
-        </p>
+      <div className="flex flex-col items-center justify-center text-white">
+        <Typography
+          variant='h1'
+          className="font-bold text-center mb-4 bg-gradient-to-r from-blue-300 via-blue-gray-300 to-indigo-600 inline-block text-transparent bg-clip-text">
+          Welcome to My Online Portfolio!</Typography>
+        <Typography variant='h4' className="text-xl text-gray-300 text-center max-w-md">
+          I'm Nikoloz Meskhi, a full-stack web developer. I'm glad you stopped by! Take a look at my projects and see what I've been working on.
+        </Typography>
       </div>
       <Link to="/about">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-6 h-6 absolute bottom-10 right-10 cursor-pointer hover:fill-blue-900">
