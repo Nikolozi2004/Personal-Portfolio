@@ -15,32 +15,32 @@ import { AnimatePresence } from 'framer-motion'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/Personal-Portfolio',
     element: <App />,
     errorElement: <PageNotFound />,
     children: [
       {
-        path: '/',
+        path: '/Personal-Portfolio',
         element: <Home />,
       },
       {
-        path: '/home',
+        path: '/Personal-Portfolio/home',
         element: <Home />,
       },
       {
-        path: '/About',
+        path: '/Personal-Portfolio/About',
         element: <About />,
       },
       {
-        path: '/Skills',
+        path: '/Personal-Portfolio/Skills',
         element: <Skills />
       },
       {
-        path: '/Contact',
+        path: '/Personal-Portfolio/Contact',
         element: <Contact />
       },
       {
-        path: '/projects',
+        path: '/Personal-Portfolio/projects',
         element: <Projects />,
       },
       // {
