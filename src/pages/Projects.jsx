@@ -5,7 +5,7 @@ export const Projects = () => {
 
     return (
         <motion.div
-            initial={{ y: '100%' }}
+            initial={{ y: '85%' }}
             animate={{ y: '0%' }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.75, ease: 'easeOut' }}

@@ -15,7 +15,8 @@ import {
   DockerOriginal,
   VisualstudioOriginal,
   VscodeOriginal,
-  VitejsOriginal
+  VitejsOriginal,
+  PostmanOriginal,
 } from 'devicons-react';
 
 export const Skills = () => {
@@ -40,7 +41,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Typescript) Novice
+                {"<TypeScript/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 20%
@@ -57,7 +58,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (JavaScript) Intermediate
+              {"<JavaScript/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 60%
@@ -74,7 +75,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (React) Intermediate
+              {"<React/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 60%
@@ -91,7 +92,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Tailwind CSS) Advanced
+              {"<Tailwind CSS/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 80%
@@ -108,7 +109,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (CSS) Advanced
+              {"<CSS/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 80%
@@ -125,7 +126,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (HTML5) Proficient
+              {"<HTML5/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 95%
@@ -148,7 +149,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (C#) Novice
+              {"<C#/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 20%
@@ -165,13 +166,13 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Node JS) Novice
+              {"<Node JS/>"}
               </Typography>
               <Typography color="white" variant="h6">
-                20%
+                60%
               </Typography>
             </div>
-            <Progress color='green' value={20} size="md" />
+            <Progress color='green' value={60} size="md" />
           </div>
         </motion.div>
         <motion.div
@@ -182,13 +183,13 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Mongodb) Novice
+              {"<MongoDB/>"}
               </Typography>
               <Typography color="white" variant="h6">
-                10%
+                45%
               </Typography>
             </div>
-            <Progress color='green' value={10} size="md" />
+            <Progress color='green' value={45} size="md" />
           </div>
         </motion.div>
         <motion.div
@@ -199,13 +200,13 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Express JS) Novice
+              {"<Express JS/>"}
               </Typography>
               <Typography color="white" variant="h6">
-                20%
+                40%
               </Typography>
             </div>
-            <Progress color='green' value={20} size="md" />
+            <Progress color='green' value={40} size="md" />
           </div>
         </motion.div>
       </div>
@@ -219,13 +220,13 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Git) Advanced Beginner
+              {"<Git/>"}
               </Typography>
               <Typography color="white" variant="h6">
-                40%
+                65%
               </Typography>
             </div>
-            <Progress color='orange' value={40} size="md" />
+            <Progress color='orange' value={65} size="md" />
           </div>
         </motion.div>
         <motion.div
@@ -236,7 +237,7 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Docker) Novice
+              {"<Docker/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 10%
@@ -253,13 +254,13 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Visual Studio) Proficient
+              {"<Visual Studio/>"}
               </Typography>
               <Typography color="white" variant="h6">
-                60%
+                70%
               </Typography>
             </div>
-            <Progress color='purple' value={60} size="md" />
+            <Progress color='purple' value={70} size="md" />
           </div>
         </motion.div>
         <motion.div
@@ -270,7 +271,24 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Visual Studio Code) Proficient
+              {"<Visual Studio Code/>"}
+              </Typography>
+              <Typography color="white" variant="h6">
+                70%
+              </Typography>
+            </div>
+            <Progress color='blue' value={70} size="md" />
+          </div>
+        </motion.div>
+        <motion.div
+          className='flex justify-between items-center w-full lg:w-2/3 mb-6 h-16 lg-max:w-11/12'
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 1.1 }}>
+          <PostmanOriginal size="80" radius='3px' className='w-20 h-20' />
+          <div className='w-full ml-3'>
+            <div className='mb-2 flex items-center justify-between gap-4'>
+              <Typography color="white" variant="h6">
+              {"<Postman/>"}
               </Typography>
               <Typography color="white" variant="h6">
                 70%
@@ -287,16 +305,16 @@ export const Skills = () => {
           <div className='w-full ml-3'>
             <div className='mb-2 flex items-center justify-between gap-4'>
               <Typography color="white" variant="h6">
-                (Vite) Proficient
+              {"<Vite/>"}
               </Typography>
               <Typography color="white" variant="h6">
-                70%
+                75%
               </Typography>
             </div>
-            <Progress color='yellow' value={70} size="md" />
+            <Progress color='yellow' value={75} size="md" />
           </div>
         </motion.div>
-        
+
       </div>
 
     </motion.div>

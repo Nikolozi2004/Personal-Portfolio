@@ -16,10 +16,9 @@ export const Home = () => {
       <div className="flex flex-col items-center justify-center text-white">
         <Typography
           variant='h1'
-          className="font-bold text-center mb-4 bg-gradient-to-r from-blue-300 via-blue-gray-300 to-indigo-600 inline-block text-transparent bg-clip-text">
-          Welcome to My Online Portfolio!</Typography>
-        <Typography variant='h4' className="text-xl text-gray-300 text-center max-w-md">
-          I'm Nikoloz Meskhi, a full-stack web developer. I'm glad you stopped by! Take a look at my projects and see what I've been working on.
+          className="font-bold ani text-center mb-4 bg-gradient-to-r from-blue-300 via-blue-gray-300 to-indigo-600 text-3xl md:text-4xl lg:text-5xl inline-block text-transparent bg-clip-text">I'm Nikolozi, a full stack web developer.</Typography>
+        <Typography variant='h4' className="text-xl text-gray-300 text-left font w-full md:max-w-2xl lg:max-w-2xl px-4 mt-4 h-auto">
+          Hello there! I'm Nikolozi, a seasoned full-stack web developer. Explore my portfolio to discover the seamless web solutions I've crafted
         </Typography>
       </div>
       <Link to="/Personal-Portfolio/about">
