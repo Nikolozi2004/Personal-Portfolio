@@ -21,7 +21,7 @@ export const NavList = () => {
                     <NavLink
                         key={page}
                         to={`/Personal-Portfolio/${page}`}
-                        className={({ isActive }) => (pathname === '/Personal-Portfolio/' && page === 'Home') || isActive ? 'flex items-center text-blue-500 transition-colors border-b-2' : 'flex items-center text-white hover:text-blue-500 transition-colors'}>
+                        className={({ isActive }) => (pathname === '/Personal-Portfolio/' && page === 'Home') || isActive ? '[text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-blue-500 flex items-center text-blue-500 transition-colors border-b-2 ' : 'flex items-center text-white hover:text-blue-500 hover:shadow-blue-500 transition-colors [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-white'}>
                         {page}
                     </NavLink>
                 </Typography>

@@ -64,18 +64,18 @@ export const Contact = () => {
 
   return (
     <motion.div
-      className='w-full h-full md:h-full flex items-center justify-center relative backdrop-saturate-50'
+      className='w-full h-full md:h-full flex items-center justify-center relative backdrop-saturate-50 flex-wrap md:flex-nowrap'
       initial={{ x: "100%" }}
       animate={{ x: "0%" }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}>
 
-      <div className='w-3/4 mx-5 mb-4 md:w-10/12 h-full flex items-center justify-center flex-col relative'>
+      <div className='w-3/4 mb-5 md:mx-5 mx-2 md:mb-4 md:w-10/12 md:h-full flex items-center justify-center flex-col relative'>
         <h1 className=' font-bold text-3xl py-8 z-50 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text'>Get In Touch</h1>
         <motion.form
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           onSubmit={handleSubmit(onSubmit)}
-          className='w-full max-w-xl flex justify-evenly items-center flex-col md:h-96 h-4/5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] rounded-md py-4 px-4'
+          className='md:gap-0 gap-4 w-full md:max-w-xl flex justify-evenly items-center flex-col md:h-96 h-4/5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] rounded-md py-4 px-4'
           action="https://api.web3forms.com/submit"
           method="POST">
           <input {...register("access_key")} type="hidden" name="access_key" value="8b9bb628-dd00-4250-8eb2-e8a8be43283d" />
@@ -160,16 +160,8 @@ export const Contact = () => {
         </motion.form>
 
       </div>
-      <div className='w-1/4 h-full flex justify-center items-center relative md:w-1/2'>
-        <div className='absolute right-0 w-full h-auto block md:hidden'>
-          <a href="https://github.com/Nikolozi2004" target='_blank'>
-            <GithubOriginal size='40' className='my-2 bg-white' />
-          </a>
-          <a href="https://www.linkedin.com/in/nikoloz-meskhi-a69bb2181/" target='_blank'>
-            <LinkedinOriginal size='40' className='my-2 bg-white' />
-          </a>
-        </div>
-        <div className='w-full h-4/5 rounded-l-lg bg-brown-900 flex flex-col justify-center items-center bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]'>
+      <div className='w-10/12 md:h-full flex justify-center items-center relative'>
+        <div className='w-full pb-4 md:pb-0 h-4/5 rounded-l-lg bg-brown-900 flex flex-col justify-center items-center bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]'>
           <a href="https://github.com/Nikolozi2004" target='_blank' className='px-2 w-full lg:w-2/3 bg-white text-white rounded-sm hover:bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]'>
             <div className='flex items-center justify-between w-full'>
               <Typography variant="h4">
