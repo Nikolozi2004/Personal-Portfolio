@@ -17,12 +17,12 @@ export const Home = () => {
         <Typography
           variant='h1'
           className="font-bold ani text-center mb-4 bg-gradient-to-r from-blue-300 via-blue-gray-300 to-indigo-600 text-3xl md:text-4xl lg:text-5xl inline-block text-transparent bg-clip-text">I'm Nikolozi, a full stack web developer.</Typography>
-        <Typography variant='h4' className="text-xl text-gray-300 text-left font w-full md:max-w-2xl lg:max-w-2xl px-4 mt-4 h-auto [text-shadow:2px_1px_9px_var(--tw-shadow-color)] shadow-purple-500">
+        <Typography variant='h4' className="text-xl text-gray-300 text-center md:text-left font w-full md:max-w-2xl lg:max-w-2xl px-4 mt-4 h-auto [text-shadow:2px_1px_9px_var(--tw-shadow-color)] shadow-purple-500">
           Hello there! I'm Nikolozi, a seasoned full-stack web developer. Explore my portfolio to discover the seamless web solutions I've crafted
         </Typography>
       </div>
       <Link to="/Personal-Portfolio/about">
-        <div className='bottom-10 right-8 z-50 absolute cursor-pointer p-2 rounded-md w-auto gap-3 bg-purple-900 shadow-lg transition-all hover:shadow-purple-300 hover:bg-purple-700 flex justify-between items-center'>
+        <div className='hidden bottom-10 right-8 z-50 absolute cursor-pointer p-2 rounded-md w-auto gap-3 bg-purple-900 shadow-lg transition-all hover:shadow-purple-300 hover:bg-purple-700 md:flex justify-between items-center'>
           <Typography className='bottom-10 right-20 cursor-pointer text-white'>
             read more about me
           </Typography>
