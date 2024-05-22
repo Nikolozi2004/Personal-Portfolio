@@ -58,7 +58,7 @@ export const About = () => {
           </Typography>
         </div>
       </div>
-      <div className='md:h-full w-full md:w-1/2 flex flex-col items-center justify-center'>
+      <div className='md:h-auto bg-black w-full md:w-1/2 flex flex-col items-center justify-center bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]'>
         <Accordion open={open === 1} animate={CUSTOM_ANIMATION}>
           <AccordionHeader onClick={() => handleOpen(1)} className='justify-center px-2'>What project are you currently working on?</AccordionHeader>
           <AccordionBody>

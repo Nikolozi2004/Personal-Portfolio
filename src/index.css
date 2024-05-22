@@ -14,7 +14,7 @@
     align-items: center;
     flex-direction: column;
     --tw-bg-opacity: 1;
-    background-color: rgb(33 33 33 / var(--tw-bg-opacity));
+    background-color: rgb(12 12 12 / var(--tw-bg-opacity));
 }
 
 /* For WebKit (Chrome, Safari, etc.) */

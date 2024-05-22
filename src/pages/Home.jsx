@@ -13,7 +13,7 @@ export const Home = () => {
       className='relative w-full homeh flex flex-col items-center justify-center'
 
     >
-      <div className="flex flex-col items-center justify-center text-white rounded-t-xl h-full max-w-screen-2xl w-full rounded-br-full rounded-bl-full p-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#35136a_100%)]">
+      <div className="shadow-2xl shadow-purple-700 flex flex-col items-center justify-center text-white rounded-t-xl h-full max-w-screen-2xl w-full rounded-br-full rounded-bl-full p-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#35136a_100%)]">
         <Typography
           variant='h1'
           className="font-bold ani text-center mb-4 bg-gradient-to-r from-blue-300 via-blue-gray-300 to-indigo-600 text-3xl md:text-4xl lg:text-5xl inline-block text-transparent bg-clip-text">I'm Nikolozi, a full stack web developer.</Typography>

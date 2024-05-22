@@ -167,7 +167,7 @@ export const Contact = () => {
               <Typography variant="h4">
                 GitHub
               </Typography>
-              <GithubOriginal size='40' color='white' fill='white' className='my-2 [&_*]:fill-white'/>
+              <GithubOriginal size='40 40' color='white' fill='white' className='my-2 h-10 w-10 [&_*]:fill-white'/>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/nikoloz-meskhi-a69bb2181/" target='_blank' className='px-2 mb-5 w-full lg:w-2/3 bg-white text-white rounded-sm hover:bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]'>
@@ -175,7 +175,7 @@ export const Contact = () => {
               <Typography variant="h4">
                 Linked In
               </Typography>
-              <LinkedinOriginal size='40' color='white' fill='white' className='my-2' />
+              <LinkedinOriginal size='40' color='white' fill='white' className='my-2  h-10 w-10' />
             </div>
           </a>
           <div className='flex items-center justify-between mb-4 w-full lg:w-2/3 h-10 px-2 rounded-md bg-white hover:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] hover:text-white'>
