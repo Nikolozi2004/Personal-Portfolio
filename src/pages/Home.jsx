@@ -10,10 +10,10 @@ export const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className='relative w-full homeh flex flex-col items-center justify-center'
+      className='relative w-full homeh flex flex-col items-center justify-center h-auto'
 
     >
-      <div className="shadow-2xl relative bgofhome shadow-purple-700 flex flex-col items-center justify-center text-white rounded-t-xl h-full max-w-screen-2xl w-full rounded-br-full rounded-bl-full p-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#35136a_100%)]">
+      <div className="shadow-2xl relative bgofhome shadow-purple-700 flex flex-col items-center justify-center text-white rounded-t-xl h-full max-w-screen-2xl w-full rounded-br-full rounded-bl-full p-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#35136a_100%)] hmbll">
         <Typography
           variant='h1'
           className="font-bold ani text-center mb-4 bg-gradient-to-r from-blue-300 via-blue-gray-300 to-indigo-600 text-3xl md:text-4xl lg:text-5xl inline-block text-transparent bg-clip-text">I'm Nikolozi, <br className='block md:hidden' /> A Full Stack Web Developer.</Typography>
@@ -22,7 +22,7 @@ export const Home = () => {
         </Typography>
       </div>
       <Link to="/Personal-Portfolio/about">
-        <div className='hover:scale-110 p-1 bottom-1 right-1 md:bottom-10 md:right-8 z-50 absolute cursor-pointer md:p-2 rounded-md w-auto gap-3 bg-purple-900 shadow-2xl transition-all hover:shadow-purple-300 hover:bg-purple-700 flex justify-between items-center'>
+        <div className='hover:scale-110 homebtn p-1 bottom-1 right-1 md:bottom-10 md:right-8 z-50 absolute cursor-pointer md:p-2 rounded-md w-auto gap-3 bg-purple-900 shadow-2xl transition-all hover:shadow-purple-300 flex justify-between items-center'>
           <Typography className='bottom-10 right-20 cursor-pointer text-white'>
             About Me
           </Typography>
@@ -32,7 +32,7 @@ export const Home = () => {
         </div>
       </Link>
     <Link to={"/Personal-Portfolio/contact"}>
-      <div className='hover:scale-110 p-1 bottom-1 left-1 md:bottom-10 md:left-8 z-50 absolute cursor-pointer md:p-2 rounded-md w-auto gap-3 bg-purple-900 shadow-2xl transition-all hover:shadow-purple-300 hover:bg-purple-700 flex justify-between items-center'>
+      <div className='hover:scale-110 homebtn p-1 bottom-1 left-1 md:bottom-10 md:left-8 z-50 absolute cursor-pointer md:p-2 rounded-md w-auto gap-3 bg-purple-900 shadow-2xl transition-all hover:shadow-purple-300 flex justify-between items-center'>
         <Typography className='bottom-10 right-20 cursor-pointer text-white'>
           Contact Me
         </Typography>

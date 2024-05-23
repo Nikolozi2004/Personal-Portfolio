@@ -28,7 +28,7 @@ export const About = () => {
         <Typography
           variant='h3'
           color='white'
-          className='mb-10 mt-8 text-center lg:text-left border-b-2 [text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-red-500'>
+          className='mb-10 mt-8 text-center lg:text-left border-b-2 [text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-purple-500'>
           About Me
         </Typography>
         <div className='w-full flex flex-col h-full'>
@@ -63,7 +63,7 @@ export const About = () => {
         <Accordion open={open === 1} animate={CUSTOM_ANIMATION}>
           <AccordionHeader onClick={() => handleOpen(1)} className='justify-center text-center text-white hover:text-purple-900 px-2'>What project are you currently working on?</AccordionHeader>
           <AccordionBody className="bg-white p-3 rounded-md text-black">
-            I am currently developing a full-stack e-commerce web application using the MERN stack with TypeScript. This involves creating a robust and scalable platform for online shopping, integrating front-end and back-end technologies seamlessly.
+            I am currently developing a full-stack e-commerce web application using the MERN stack with TypeScript. This involves creating a robust and scalable platform for online shopping and integrating front-end and back-end technologies seamlessly.
           </AccordionBody>
         </Accordion>
         <Accordion open={open === 2} animate={CUSTOM_ANIMATION}>
@@ -79,7 +79,7 @@ export const About = () => {
             What are your career goals?
           </AccordionHeader>
           <AccordionBody className="bg-white p-3 rounded-md text-black">
-            My career goal is to become a paragraphing full-stack developer, specializing in creating scalable and efficient web applications. I am passionate about continuous learning and staying updated with the latest technologies. In the long term, I aim to take on paragraphership roles where I can mentor and guide junior developers and contribute to innovative projects that make a positive impact.
+            My career aspiration is to excel as a proficient full-stack developer, specialising in crafting scalable and high-performing web applications. I am deeply committed to ongoing learning and consistently staying abreast of emerging technologies and industry trends. Looking ahead, I aspire to assume leadership positions where I can provide mentorship to emerging talents in the field while also contributing my expertise to pioneering projects that drive positive change.
           </AccordionBody>
         </Accordion>
         <Accordion open={open === 4} animate={CUSTOM_ANIMATION}>

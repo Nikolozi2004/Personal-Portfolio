@@ -64,39 +64,46 @@
     src: url('./fonts/Caveat-Bold.ttf');
 }
 
-/* .NavLink {
-    font-family: robotomedium;
-} */
-
 .contchild:first-child {
     fill: #ffffff !important;
 }
 
 .ani {
-    background: linear-gradient(to right, #ffffff 20%, #ff8c00 30%, #ff00ff 50%, #ff8c00 70%, #ffffff 80%);
+    background: linear-gradient(90deg, #ff6b6b, #f9ca24, #38ada9, #9b59b6, #f368e0);
+    background-size: 400% 400%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    background-size: 200% auto;
-    animation: textShine 7s ease-in-out infinite alternate;
+    animation: gradientAnimation 10s ease-in-out infinite alternate;
 }
 
 .homeh {
-    height: 105vh;
+    height: 100%;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .fntnav {
     font-family: navlg;
     font-size: 1.3rem;
-    background: linear-gradient(to right, #6669ba 20%, #ff8c00 30%, #ff00ff 50%, #ff8c00 70%, #c83737 80%);
+    background: linear-gradient(to right, #ff9a9e 20%, #fad0c4 30%, #fad4a1 50%, #ffeecf 70%, #ffebd6 80%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     background-size: 200% auto;
-    animation: textShine 4s ease-in-out infinite alternate;
-    width: 113px;
+    animation: textShine 6s ease-in-out infinite alternate;
+    width: 125px;
 }
 
 @keyframes textShine {
