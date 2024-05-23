@@ -30,7 +30,7 @@ export const NavBar = () => {
                 <Typography
                     as="a"
                     variant="h6"
-                    className="mr-4 cursor-pointer py-1.5"
+                    className="fntnav cursor-default"
                     color='white'
                 >
                     Nikoloz Meskhi

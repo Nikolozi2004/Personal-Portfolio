@@ -44,10 +44,10 @@ export const Skills = () => {
                 {"<TypeScript/>"}
               </Typography>
               <Typography color="white" variant="h6">
-                20%
+                30%
               </Typography>
             </div>
-            <Progress color='blue' value={20} size="md" />
+            <Progress color='blue' value={30} size="md" />
           </div>
         </motion.div>
         <motion.div

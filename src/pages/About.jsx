@@ -41,13 +41,13 @@ export const About = () => {
           <Typography
             variant='paragraph'
             color='white'
-            className='mb-6'>
-            I have a diverse set of skills, ranging from front-end development with HTML, CSS, and JavaScript to back-end development with Node.js and databases like MongoDB. My toolkit includes popular frameworks and libraries such as React and Tailwind CSS, and I'm proficient in using development tools like Git, Docker, and various IDEs.
+            className='mb-8'>
+            I have a diverse skill set that covers various aspects of web development and programming. On the front-end, I excel at creating engaging user interfaces using HTML, CSS, and JavaScript, along with frameworks like React. For back-end development, I'm proficient in Node.js and Express.js, and I'm skilled in working with databases such as MongoDB. Additionally, I have experience in desktop application development with C#. My toolkit also includes essential tools like Git, Docker, and Bruno, which I use to ensure efficient development processes.
           </Typography>
           <Typography
             variant='paragraph'
             color='white'
-            className='mb-6'>
+            className='mb-8'>
             With a strong foundation in both front-end and back-end technologies, I enjoy building dynamic, responsive, and user-friendly web applications. I'm constantly learning and staying up-to-date with the latest trends in web development to ensure that my projects are cutting-edge.
           </Typography>
           <Typography

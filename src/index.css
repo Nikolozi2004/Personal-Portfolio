@@ -59,6 +59,11 @@
     src: url('./fonts/Poetsen_One/PoetsenOne-Regular.ttf');
 }
 
+@font-face {
+    font-family: navlg;
+    src: url('./fonts/Caveat-Bold.ttf');
+}
+
 /* .NavLink {
     font-family: robotomedium;
 } */
@@ -81,8 +86,56 @@
     height: 105vh;
 }
 
+.fntnav {
+    font-family: navlg;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, #6669ba 20%, #ff8c00 30%, #ff00ff 50%, #ff8c00 70%, #c83737 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: 200% auto;
+    animation: textShine 4s ease-in-out infinite alternate;
+    width: 113px;
+}
+
 @keyframes textShine {
     to {
         background-position: 200%;
     }
+}
+
+
+.prjhome {
+    --c: no-repeat linear-gradient(#5a10c1 0 0);
+    background:
+        var(--c) calc(-100% + var(--p, 0%)) 100%,
+        var(--c) calc(200% - var(--p, 0%)) 0;
+    background-size: 50.1% var(--p, .08em);
+    transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+
+}
+
+.nonactivenav {
+    background: linear-gradient(#ffffff 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+    transition: .2s, background-position 0s;
+    border-radius: 5px;
+}
+
+.activenav {
+    background: linear-gradient(#ffffff 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+    transition: .2s, background-position 0s;
+    border-radius: 5px;
+}
+
+.nonactivenav:hover {
+    --p: 101%;
+    --t: 0.3s;
+    color: #fff;
+}
+
+.prjhome:hover {
+    --p: 101%;
+    --t: 0.3s;
+    color: #fff;
 }
