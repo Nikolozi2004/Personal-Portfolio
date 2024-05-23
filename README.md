@@ -1,4 +1,4 @@
-# [Your Name]'s Portfolio
+# [Nikoloz Meskhi]'s Portfolio
 
 Welcome to my portfolio website! This website showcases my projects, skills, and provides a way to contact me.
 
@@ -6,16 +6,13 @@ Welcome to my portfolio website! This website showcases my projects, skills, and
 
 - [Demo](#demo)
 - [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Pages](#pages)
 - [Components](#components)
 - [Fonts](#fonts)
-- [License](#license)
 
 ## Demo
 
-[Link to live demo](#) - You can find a live demo of the website here.
+[Link to live demo](https://nikolozi2004.github.io/Personal-Portfolio/) - You can find a live demo of the website here.
 
 ## Tech Stack
 
@@ -27,7 +24,7 @@ Welcome to my portfolio website! This website showcases my projects, skills, and
 
 ## Pages
 
-1. Home: Landing page showcasing a brief introduction and highlights.
+1. Home: Landing page showcasing a brief introduction.
 2. About: Detailed information about myself.
 3. Projects: Portfolio showcasing my projects.
 4. Skills: Overview of my skills and expertise.
